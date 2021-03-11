@@ -86,7 +86,7 @@ public class AutoDriveSystem {
             (frontLeft.getSelectedSensorVelocity() * 10)*(Units.inchesToMeters(Auto.kWheelRadiusInches * 2 *Math.PI) / Auto.kEncoderTicksPerRev),
             (frontRight.getSelectedSensorVelocity() * 10) *(Units.inchesToMeters(Auto.kWheelRadiusInches* 2 * Math.PI )/ Auto.kEncoderTicksPerRev),
             (backLeft.getSelectedSensorVelocity() * 10)*(Units.inchesToMeters(Auto.kWheelRadiusInches* 2 * Math.PI  )/ 1440.0), // Different Encoder. 1440 per rev
-            (backRight.getSelectedSensorVelocity() * 10)*(Units.inchesToMeters(Auto.kWheelRadiusInches) * 2 * Math.PI)/ Auto.kEncoderTicksPerRev)
+            (backRight.getSelectedSensorVelocity() * 10)*(Units.inchesToMeters(Auto.kWheelRadiusInches * 2 * Math.PI)/ Auto.kEncoderTicksPerRev)
         );
     }
 
